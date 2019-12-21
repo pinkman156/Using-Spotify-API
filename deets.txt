@@ -1,0 +1,8 @@
+ Client ID 8961289cf3524aba9356f0a0b98a1753 
+ Client Secret 06bfbd68768c4ce69682f818e57b6478 
+ http://localhost:8888/callback
+
+ Access token
+    BQA5rK-2u-weOyF1fhPuaUjgADjE8D7v5Bk29CJ-ie0LT68nHTcpNw1PfWrCxAneda9rB8zZdX_wJU7J_X34A6nzsXH3v0g4hm2EOtrcHLPo5-AZoAXrel5NjHtGaoLZgY_7u3Nr_UQ8o2ZWk7C-61ioTXjhkeBDC_SZdbM9kVA5UMSnIQ
+Refresh token
+    AQCOr9MEM_68o4NH_kDvz7P8LB1tzJT2AyK7AG96fuMJKWIPtQTL_fLjtkmaqp

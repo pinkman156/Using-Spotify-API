@@ -97,6 +97,10 @@ a:active {
   text-decoration-style: dotted;
   color: rgb(0, 0, 0);
 }
+#main-header3 {
+  text-decoration-style: dotted;
+  color: rgb(0, 0, 0);
+}
 
 #main {
   color: #fff;

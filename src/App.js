@@ -22,7 +22,7 @@ class App extends Component {
         fav: "",
         favalbum: "",
         tempo: "",
-        top: ""
+        albums: []
       }
     };
   }
@@ -45,15 +45,19 @@ class App extends Component {
         spotifyApi
           .getAudioAnalysisForTrack("31VOknKjFrEX47bZXzqcoF")
           .then(d => {
-            this.setState({
-              nowPlaying: {
-                name: data.item.name,
-                albumArt: data.item.album.images[0].url,
-                album: data.item.album.name,
-                fav: dat.name,
-                favalbum: dat.album.images[0].url,
-                tempo: d.track.tempo
-              }
+            spotifyApi.getArtistAlbums("43ZHCT0cAZBISjO8DG9PnE").then(alb => {
+              console.log(alb.items[0].name);
+              this.setState({
+                nowPlaying: {
+                  name: data.item.name,
+                  albumArt: data.item.album.images[0].url,
+                  album: data.item.album.name,
+                  fav: dat.name,
+                  favalbum: dat.album.images[0].url,
+                  tempo: d.track.tempo,
+                  albums: alb.body
+                }
+              });
             });
           });
       });
@@ -86,7 +90,7 @@ class App extends Component {
           </div>
         </section>
         <div className="container1">
-          <div id="main-header">
+          <div id="main-header3">
             {this.state.loggedIn && (
               <button onClick={() => this.getNowPlaying()}>
                 <h1>Check Now Playing</h1>
